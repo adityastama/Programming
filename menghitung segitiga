@@ -1,0 +1,53 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+
+	int s1, s2, s3, total, pilihan;
+
+	cout << "\nPROGRAM PENGHITUNG SEGITIGA\n" << endl;
+
+	cout << "masukan sisi pertama : ";
+	cin >> s1;
+
+	cout << "masukan sisi kedua : ";
+	cin >> s2;
+
+	cout << "masukan sisi ketiga : ";
+	cin >> s3;
+
+	total = s1 + s2 + s3;
+
+	cout << "\ntermasuk segitiga apakah ini ? \n" << endl;
+
+	cout << "1. SEGITIGA SAMA SISI..." << endl;
+	cout << "2. SEGITIGA SAMA KAKI..." << endl;
+	cout << "3. SEGITIGA SEMBARANG..." << endl;
+
+	pilih:
+	cout << "\nmasukan pilihan : ";
+	cin >> pilihan;
+
+	switch(pilihan)
+	{
+	case 1:
+		cout << "\nini SEGITIGA SAMA SISI" << endl;
+		cout << "kelilingnya adalah : " << total << endl;
+		break;
+	case 2:
+		cout << "\nini SEGITIGA SAMA KAKI" << endl;
+		cout << "kelilingnya adalah : " << total << endl;
+		break; 
+	case 3:
+		cout << "\nini SEGITIGA SEMBARANG" << endl;
+		cout << "kelilingnya adalah : " << total << endl;
+		break;
+
+	default:
+		cout << "\npilihan anda salah silahkan masukan kembali!\n" << endl;
+		goto pilih;
+	}
+
+
+		return 0;
+}
